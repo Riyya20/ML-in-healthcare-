@@ -1,0 +1,71 @@
+# Predicting Cognitive Task Performance in Individuals with ADHD using fMRI
+
+This project aims to predict cognitive task performance in individuals with Attention Deficit Hyperactivity Disorder (ADHD) using functional Magnetic Resonance Imaging (fMRI) data. By analyzing neural activity during various cognitive tasks, we leverage machine learning models to classify ADHD presence and predict task performance efficiency.
+
+## Overview
+
+ADHD is a neurodevelopmental disorder characterized by inattention, hyperactivity, and impulsivity. fMRI data can capture the neural dynamics associated with cognitive control and attention regulation. This project investigates how brain activity during tasks can be used to predict task performance in ADHD individuals.
+
+## Project Structure
+
+- `Predicting Cognitive Task Performance in Individuals with ADHD using fMRI.ipynb`: Main Jupyter Notebook containing data preprocessing, feature extraction, model training, and evaluation.
+- `README.md`: Project documentation (this file).
+
+## Objectives
+
+- Preprocess and visualize fMRI data.
+- Extract region-specific brain activity features.
+- Train machine learning models to:
+  - Predict whether a subject has ADHD.
+  - Estimate cognitive task performance metrics.
+- Evaluate model accuracy, precision, recall, and F1-score.
+
+## Technologies Used
+
+- Python
+- Numpy, Pandas
+- Scikit-learn
+- Nilearn (for fMRI data manipulation)
+- Matplotlib and Seaborn (for visualization)
+- Jupyter Notebook
+
+## Dataset
+
+The dataset used in this project consists of publicly available fMRI scans from individuals with and without ADHD performing cognitive tasks. The data includes:
+
+- Task-related BOLD signals
+- Subject metadata
+- Behavioral task performance scores
+
+Dataset preprocessing involves noise removal, motion correction, and ROI extraction using standard fMRI pipelines.
+
+## Methodology
+
+1. Data Loading and Preprocessing:
+   - Load 4D fMRI scans and metadata
+   - Preprocess using Nilearn (smoothing, masking)
+   - Extract time series from anatomical regions of interest (ROIs)
+
+2. Feature Engineering:
+   - Compute average activation per ROI
+   - Calculate temporal and spatial correlation features
+   - Concatenate features into a vector for classification
+
+3. Model Training:
+   - Logistic Regression, Random Forest, Support Vector Machine
+   - Cross-validation for robustness
+   - Hyperparameter tuning using GridSearchCV
+
+4. Evaluation Metrics:
+   - Accuracy
+   - Precision, Recall, F1-Score
+   - Confusion Matrix and ROC Curve
+
+## Results
+
+- Achieved classification accuracy of ~XX% (update this with your result)
+- Most informative ROIs were found to be in the prefrontal cortex and parietal lobes
+- Demonstrated significant correlation between predicted scores and real task performance in ADHD individuals
+
+*****Disclaimer : The code to this project is not available yet as the project is in the publishing pipeline. The entire code and graphs/plots will be available once the paper is published. Thank you. 
+
